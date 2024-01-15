@@ -22,9 +22,13 @@ export const Row = memo(({
       (day) =>
         day &&
         setCurrentCells((old) =>
-          !old.find((item) => item === day.value)
-            ? [...old, day.value]
-            : [...old.filter((item) => item !== day.value)]
+          !old.find((item) => item.id === day.value && item.column === day.column)
+            ? [...old,  {
+              id: day.value,
+              column: day.column,
+            },
+          ]
+            : [...old.filter((item) => item.id !== day.value)]
         )
     );
   };

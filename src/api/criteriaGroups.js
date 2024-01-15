@@ -15,7 +15,7 @@ export function findById(params) {
             name
             label
             countCriteria
-            ${ renderFragments(fragments) }
+            ${ renderFragments(params) }
         }
     }`;
 }
