@@ -1,0 +1,23 @@
+{
+  "presets": [
+    "@babel/env",
+    "@babel/react"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./src"
+        ],
+        "alias": {
+          "config": "./src/config.js",
+          "helpers": "./src/helpers",
+          "api": "./src/api",
+          "auth": "./src/auth",
+          "api-helpers": "./src/api-helpers"
+        }
+      }
+    ]
+  ]
+}

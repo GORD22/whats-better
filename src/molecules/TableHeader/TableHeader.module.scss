@@ -1,0 +1,50 @@
+.list {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  width: 100%;
+  display: flex;
+  gap: 1px;
+  background-color: var(--main-color);
+}
+
+.year {
+  -webkit-user-select: none;
+  user-select: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 6.05rem;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--light-color);
+
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1rem;
+  flex-shrink: 0;
+}
+
+.dayCell {
+	-webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 3.25rem;
+  padding: 0.25rem 0;
+  background-color: var(--light-color);
+  flex-shrink: 0;
+
+  text-align: center;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1rem;
+  border-bottom: 1px solid var(--main-color);
+  text-transform: capitalize;
+}
+
+.weekend {
+  background-color: unset;
+}

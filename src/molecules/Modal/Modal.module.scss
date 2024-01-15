@@ -1,0 +1,17 @@
+.modal {
+  position: fixed;
+  padding: 12px;
+  border-radius: 12px 0px 0px 0px;
+  background-color: var(--light-color);
+  box-shadow: -5px -3px 13px 0px rgba(0, 0, 0, 0.32);
+  width: 11rem;
+  height: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  font-weight: 600;
+}
